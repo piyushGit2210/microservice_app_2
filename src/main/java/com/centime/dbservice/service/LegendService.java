@@ -34,7 +34,6 @@ public class LegendService {
         return buildTree(groupedByParent, 0L);
     }
 
-    @LogMethodParam
     private List<LegendResponseDTO> buildTree(Map<Long, List<Legend>> groupedByParent, Long parentId) {
         List<Legend> current = groupedByParent.getOrDefault(parentId, new ArrayList<>());
         List<LegendResponseDTO> result = new ArrayList<>();

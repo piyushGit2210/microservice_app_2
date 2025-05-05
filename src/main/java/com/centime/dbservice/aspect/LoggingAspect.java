@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 
 @Aspect
-//@Component
+@Component
 public class LoggingAspect {
 
-    @Before("@annotation(LogMethodParam)")
+    @Before("@annotation(com.centime.dbservice.annotation.LogMethodParam)")
     public void logMethodParams(JoinPoint joinPoint) {
         System.out.println("Inside logging aspect");
         String method = joinPoint.getSignature().toShortString();
