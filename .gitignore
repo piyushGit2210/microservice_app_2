@@ -33,3 +33,9 @@ build/
 .vscode/
 mvnw*
 .mvn/*
+.metadata/
+*.launch
+*.log
+.settings/
+.project
+.classpath
