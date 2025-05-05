@@ -7,7 +7,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
 @EnableAspectJAutoProxy
-public class ApConfig {
+public class AppConfig {
 
     @Bean
     LoggingAspect messageAspect() {
